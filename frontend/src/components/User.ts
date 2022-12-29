@@ -1,9 +1,8 @@
-import React from "react";
-
+import React from 'react';
 
 interface IUser {
-    nome: string
-    email: string
+    nome: string;
+    email?: string;
 }
 
 interface Props {
@@ -11,12 +10,10 @@ interface Props {
 }
 
 const User: React.FC<Props> = ({ user }) => {
-    return (
-        <div>
+    <div>
         <strong>Nome: </strong> {user.nome} <br / >
-            <strong>E - mail: </strong> {user.email} <br / >
+            <strong>E - mail: </strong> {user.email || 'Não possui e-mail'} <br / >
                 </div>
-    );
 };
 
 export default User;

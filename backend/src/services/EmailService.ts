@@ -1,4 +1,4 @@
-interface ImailTo {
+interface IMailTo {
     nome: string;
     email: string;
 }
@@ -10,17 +10,17 @@ interface IMailMassage {
 }
 
 
-interface MessageDTO {
-    to: ImailTo;
+interface IMessageDTO {
+    to: IMailTo;
     massage: IMailMassage;
 }
 
 interface IEmailService {
-    sendMail(request: IEmailService): void;
+    sendMail(request: IMessageDTO): void;
 }
 
 class EmailService implements IEmailService {
-    sendEmail({ to, message }: IMassage) {
+    sendEmail({ to, message }: IMessageDTO) {
         console.log(`Email Enviado para ${to.nome}: ${message.subject}`)
     }
 }

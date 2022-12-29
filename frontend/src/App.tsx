@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      {users.map(users => <User key={users.email} user={user} />)}
+      {users.map(user => <User key={user.email} user={user} />)}
     </div>
   );
 }
