@@ -4,17 +4,20 @@
 
 <h2>comandos importantes</h2> 
 
-  .Instalando o typescript: npm install -D typescript
+  <details>
 
-  .Instalando o express:** npm install express
+    .Instalando o typescript: npm install -D typescript
 
-  .Usando o tsc:** npx tsc src/index.ts 
+    .Instalando o express:** npm install express
 
-  .Instalando o ts node dev:** npm add ts-node-dev -D
+    .Usando o tsc:** npx tsc src/index.ts 
 
-  .Rodar o Dev Server:** npm run dev:server 
+    .Instalando o ts node dev:** npm add ts-node-dev -D
 
-  .Criando o Front-End:** npm create react-app frontend --template=typescript
+    .Rodar o Dev Server:** npm run dev:server 
+
+    .Criando o Front-End:** npm create react-app frontend --template=typescript
+  </details>
 
 <h2>O que é TypeScript?</h2>
 
@@ -33,6 +36,6 @@ TypeScript é uma linguagem de programação
 
 <h2>Pontos Importantes</h2>
 
-O NODE por padrão não consegue entender o TypeScript. Então usamos o tsc que é um<br> 
-conversor que vem dentro do node modules. Ele vai criar uma copia do arquivo TypeScript
-<br>em JavaScript.
+  O NODE por padrão não consegue entender o TypeScript. Então usamos o tsc que é um<br> 
+  conversor que vem dentro do node modules. Ele vai criar uma copia do arquivo TypeScript
+  <br>em JavaScript.
